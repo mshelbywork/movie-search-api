@@ -32,5 +32,18 @@ Will follow Fastapi standard file managment
     possibly a seperate directory if I ever add a front end to this.
 
 
+# Planning version 0.2.0 
 
+## Feature Goals
+- Add filtering for every supported movie field
+- Add support for combining multiple filters in one request
+- Add sorting for filtered/search results
+- Normalize dataset values and user input to improve search reliability
+
+## Implementation Concerns
+- Keep filtering logic scalable as fields increase
+- Handle list fields like genre and lead actors correctly
+- Define exact match vs partial match behavior
+- Make input handling more forgiving for capitalization and spacing differences
+- Decide how to handle invalid filters or empty results
 
